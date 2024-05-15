@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 1100px;
+        }
+
+        .top {
+            height: 40%;
+        }
+
+        .nav_child {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            height: 20%;
+        }
+
+        .text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+            font-size: 35px;
+        }
+
+        .tag {
+            font-size: 15px;
+            padding-left: 15px;
+            color: lightgray;
+        }
+
+        .nav_bar {
+            border: 2px solid rgb(60, 60, 60);
+            border-radius: 30px;
+            display: flex;
+            padding: 15px;
+            width: 80%;
+            background-color: rgb(19, 19, 19);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .li {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            border-right: 2px solid rgb(60, 60, 60);
+            height: 25px;
+        }
+
+        .last_li {
+            border-right: 0;
+        }
+
+        .header {
+            background-color: rgb(73, 78, 227);
+            display: flex;
+            padding: 20px;
+        }
+
+        .image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        img {
+            border: 10px solid lightgray;
+        }
+
+        .about {
+            width: 50%;
+        }
+
+        .heading {
+            font-size: 40px;
+            color: white;
+        }
+
+        .heading_about {
+            font-size: 25px;
+            color: gray;
+        }
+
+        .about {
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        button {
+            width: 120px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0.5px solid grey;
+            background-image: linear-gradient(rgb(71, 65, 65), gray);
+            color: white;
+            font-size: 15px;
+        }
+
+        .center {
+            display: flex;
+            height: 50%;
+            margin-bottom: 50px;
+        }
+
+        .welcome {
+            width: 70%;
+            margin: 50px;
+            padding-left: 30px;
+        }
+
+        .news {
+            width: 30%;
+            margin: 50px;
+        }
+
+        .welcome_head {
+            font-size: 35px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            padding: 20px 0px 15px 0px;
+            border-bottom: 1px solid blue;
+        }
+
+        .para {
+            padding: 20px 0px 15px 0px;
+            word-spacing: 5px;
+            font-size: 18px;
+            border: none;
+        }
+        .last{
+            border-left: 10px solid blue;
+            padding-left: 15px;
+            padding-top: 0;
+            margin-top: 25px;
+        }
+        .news_first{
+            background-color: black;
+            color: white;
+            padding: 18px;
+        }
+        .news_child{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: lightgray;
+            border-bottom: 1px solid white;
+        }
+        .img_about{
+            padding-left: 15px;
+        }
+        .imag{
+            border: 1px solid gray;
+            padding: 5px;
+
+        }
+        .date{
+            color: lightgray;
+        }
+        .img_about{
+            font-size: 18px;
+        }
+        footer{
+            background-color: black;
+            height: 10%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .footer{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot{
+            background-image: linear-gradient(rgb(30, 28, 28), rgb(21, 19, 19));
+            font-size: 20px;
+            border: 1px solid rgb(43, 40, 40);
+            border-radius: 10px;
+            padding: 3px 60px;
+        }
+        .ul_li{
+            
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <nav class="nav">
+                <div class="text">
+                    <p>Simple</p>
+                    <p class="tag">Your tagLine goes here</p>
+                </div>
+                <div class="nav_child">
+                    <div class="nav_bar">
+                        <li class="li"><a href="">Home</a></li>
+                        <li class="li"><a href="">About</a></li>
+                        <li class="li"><a href="">Relation</a></li>
+                        <li class="li"><a href="">Ref</a></li>
+                        <li class="li last_li"><a href="">Temp</a></li>
+                    </div>
+                </div>
+            </nav>
+            <header class="header">
+                <div class="image">
+                    <img src="image.jpg" alt="" width="500px" height="300px">
+                </div>
+                <div class="about">
+                    <p class="heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="heading_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                        facere, illo perspiciatis unde velit suscipit possimus, veritatis vitae odio eos libero.</p>
+                    <button>Read More</button>
+                </div>
+            </header>
+        </div>
+        <div class="center">
+            <div class="welcome">
+                <p class="welcome_head">Welcome to our WEBSITE!</p>
+                <hr style="height: 10px;width: 150px; background-color: blue;border: none;">
+                <p class="para first_one">This is a <u>professional XHTML/CSS layout</u> provided by <u>templete.com</u>
+                    for free of charge. Ex, animi accusamus, deserunt quo quae sint porro blanditiis eius officia
+                    possimus magni soluta? Possimus nam molestias libero est optio aliquam corrupti?</p>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, animi accusamus, deserunt
+                    quo quae sint porro blanditiis eius officia possimus magni soluta? Possimus nam molestias libero est
+                    optio aliquam corrupti?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <p class="para">
+                    <ul style="list-style-type: square; padding-left: 40px;">
+                        <li class="ul_li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio assumenda, nisi facilis officiis quis? Lorem ipsum dolor sit amet.</li>
+                        <li class="ul_li">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet corporis facilis dolorem voluptas similique ullam. Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </p>
+                <p class="para last">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic praesentium at beatae quis blanditiis, incidunt tempora facere esse. Minima iure corrupti eveniet repudiandae dolorem deserunt voluptates laudantium voluptas similique! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+            <div class="news">
+                <div class="news_first">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="news_child news_second ">
+                    <img src="image_01.jpg" alt="" width="100px" height="100px" class="imag">
+                    <div class="img_about">
+                        <p style="color: gray;">OCT 29, 2048</p>
+                        <p><b>Lorem, ipsum dolor.</b></p>
+                        <p style="color: grey;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi.</p>
+                    </div>
+                </div>
+                <div class="news_child news_second ">
+                    <img src="image_02.jpg" alt="" width="100px" height="100px" class="imag">
+                    <div class="img_about">
+                        <p style="color: gray;">OCT 29, 2048</p>
+                        <p><b>Lorem, ipsum dolor.</b></p>
+                        <p style="color: grey;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi.</p>
+                    </div>
+                </div>
+                <div class="news_child news_second ">
+                    <img src="image_03.jpg" alt="" width="100px" height="100px" class="imag">
+                    <div class="img_about">
+                        <p style="color: gray;">OCT 29, 2048</p>
+                        <p><b>Lorem, ipsum dolor.</b></p>
+                        <p style="color: grey;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+            <p class="foot">Services</p>
+            <p class="foot">About</p>
+            <p class="foot">Cool Links</p>
+            <p class="foot">Contact</p>
+            <p class="foot">Partners</p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
